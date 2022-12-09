@@ -1,8 +1,9 @@
 :root {
     --background-color: rgb(20,26,41);
-    --orange-color: rgb(230,160,127);
-    --yellow-color: rgb(245,242,113);
-    --white-color: rgb(255,255,255);
+    --orange-color: #ffa260;
+    --yellow-color: #f1ff5c;
+    --white-color: #ffffff;
+    
 }
 html, body {
     display: flex;
@@ -19,7 +20,8 @@ html, body {
 
     font-size: 24px;
     color: var(--orange-color);
-    background-color: var(--background-color)
+    background-color: var(--background-color);
+    transition: .3s;
 
 }
 
@@ -27,6 +29,7 @@ html, body {
     transform: translateY(-0.2em);
     border: 2px solid var(--yellow-color);
     color: var(--white-color);
+    box-shadow: 0 4px 8px var(--yellow-color);
 
     /* offset-x offset-y color */
     /* box-shadow: 4px -4px teal; */
@@ -36,6 +39,4 @@ html, body {
 
     /* offset-x | offset-y | blur-radius | spread-radius | color */
     /* box-shadow: 4px 4px 2px 8px rgba(0, 0, 0, 0.2); */
-
-    box-shadow: 0 8px 8px var(--yellow-color);
 }
